@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
     // }
 
     cout<<d.at(1);
-    d.erase(1,2);
+    
 
 return 0;
 }

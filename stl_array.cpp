@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
     cout<<a.front()<<endl;
     cout<<a.back()<<endl;
     cout<<a.empty()<<endl;
-
+    
 
 return 0;
 }

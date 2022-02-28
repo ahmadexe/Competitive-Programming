@@ -26,7 +26,6 @@ int main(int argc, char const *argv[])
     sv.push_back("A");
     sv.push_back("B");
     sv.push_back("C");
-
     cout<<"String vector capacity "<<sv.capacity()<<endl; 
     cout<<"Size "<<sv.size()<<endl; 
 
