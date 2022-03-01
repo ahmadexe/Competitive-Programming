@@ -8,33 +8,33 @@ void change(int* x){
 int main()
 {
 
-    // int a = 5;
-    // int* b = &a;
-    // cout<<b<<endl;
-    // cout<<&b<<endl;
-    // cout<<*b<<endl;
-    // // //cout<<*b<<endl;
-    // // change(&a);
-    // // cout<<a<<endl;
-    // // int a[4];
+    int a = 5;
+    int* b = &a;
+    cout<<b<<endl;
+    cout<<&b<<endl;
+    cout<<*b<<endl;
+    cout<<*b<<endl;
+    change(&a);
+    cout<<a<<endl;
+    int a[4];
     
-    // int* ptr = (int*)malloc(sizeof(int) * 4);
-    // cout<<&ptr[0]<<endl;
-    // cout<<&ptr[1]<<endl; 
-    // cout<<&ptr[2]<<endl;
-    // cout<<&ptr[3]<<endl;
+    int* ptr = (int*)malloc(sizeof(int) * 4);
+    cout<<&ptr[0]<<endl;
+    cout<<&ptr[1]<<endl; 
+    cout<<&ptr[2]<<endl;
+    cout<<&ptr[3]<<endl;
 
-    // for (int i = 0; i < 4; i++){
-    //     ptr[i] = i;
-    // }
-    // cout<<ptr[0]<<endl;
-    // cout<<ptr[1]<<endl;
-    // cout<<ptr[2]<<endl;
-    // cout<<ptr[3]<<endl;
+    for (int i = 0; i < 4; i++){
+        ptr[i] = i;
+    }
+    cout<<ptr[0]<<endl;
+    cout<<ptr[1]<<endl;
+    cout<<ptr[2]<<endl;
+    cout<<ptr[3]<<endl;
    
     int* arr = (int*)malloc(12);
     cout<<"--------"<<endl;
-    //int arr[] = {1,2,3};
+    int arr[] = {1,2,3};
     free(arr);
     
     arr[0] = 1;
@@ -42,9 +42,13 @@ int main()
     arr[2] = 3;
     
     int* p = arr;
-    //free(p);
-    // cout<<*(arr+1);
+    free(p);
+    cout<<*(arr+1);
     cout<<*(p+1);
-
+    
+    int x = 4;
+    int &n = x;
+    n = 5;
+    cout<<x;
     return 0;
 }

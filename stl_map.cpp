@@ -14,6 +14,7 @@ int main(int argc, char const *argv[])
         cout<<i.first<<" "<<i.second<<endl;
     }
 
+    // Mehtods same as set.
 
 return 0;
 }

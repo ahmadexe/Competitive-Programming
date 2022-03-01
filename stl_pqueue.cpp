@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
         cout<<max.top()<<" ";
         max.pop();
     }
-
+    
     priority_queue<int, vector<int>, greater<int>> min;
     min.push(9);
     min.push(10);

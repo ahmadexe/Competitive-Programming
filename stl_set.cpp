@@ -33,7 +33,6 @@ int main(int argc, char const *argv[])
     //     cout<<*it;
     //     it++;
     // }
-    cout<<s.count(5);
     auto pos = s.find(9); 
     for (auto it = pos; it != s.end();it++){
         cout<<*it<<" ";
