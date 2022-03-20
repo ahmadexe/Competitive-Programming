@@ -1,7 +1,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
+// Always pass by refrence not by value, pass by value runs in O(n)
 void change(vector<int> a){
     a[0] = 6;
 }
@@ -28,7 +28,6 @@ int main(int argc, char const *argv[])
     sv.push_back("C");
     cout<<"String vector capacity "<<sv.capacity()<<endl; 
     cout<<"Size "<<sv.size()<<endl; 
-
     cout<<"Before Pop"<<endl;
     cout<<"Size: "<<sv.size()<<endl;
     for (string i : sv){
