@@ -49,8 +49,6 @@ int stamps(string s)
 
 int main(int argc, char const *argv[])
 {
-
     cout << stamps("AAABAAB");
-
     return 0;
 }
