@@ -23,5 +23,11 @@ int main(int argc, char const *argv[])
     int val = 4;
     val = val & ~(1<<2);
     cout<<val<<endl;
+
+    // How to toggle
+    int q = 4;
+    int w = q ^ 1<<2;
+    cout<<w<<endl;
+
     return 0;
 }
