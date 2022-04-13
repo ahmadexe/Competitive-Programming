@@ -25,28 +25,22 @@ int studentBody(vector<int> v, int k)
 
 int main(int argc, char const *argv[])
 {
-
     vector<int> v;
     int tests;
     cin>>tests;
-    int i = 0;
-    while (i < tests)
+    while (tests--)
     {
         int n,k;
-        cin>>n;
-        cin>>k;
-        int vals;
+        cin>>n>>k;
+        vector<int> v;
         for (int j = 0; j < n ; j++)
         {
+            int vals;
             cin>>vals;
             v.push_back(vals);
         }
         cout<<studentBody(v,k)<<endl;
-        i++;
         v.clear();
     }
-    
-
-
     return 0;
 }

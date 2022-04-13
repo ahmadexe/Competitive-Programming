@@ -2,12 +2,12 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int checkWrongs(vector<int> v)
+long long int checkWrongs(vector<long long int> v)
 {
-    int wrong = 0;
-    int i = 0;
-    int j = 1;
-    set<int> s;
+    long long int wrong = 0;
+    long long int i = 0;
+    long long int j = 1;
+    set<long long int> s;
     if (v.size() == 0)
     {
         return -1;
@@ -36,8 +36,23 @@ int checkWrongs(vector<int> v)
 int main(int argc, char const *argv[])
 {
 
-    vector<int> v = {1, 1, 1, 3, 3, 3, 2};
-    cout<<checkWrongs(v);   
+    int t;
+    cin>>t;
+    while (t--)
+    {
+        vector<long long int> v;
+        int n = 0;
+        cin>>n;
+        for (int i = 0; i < n; i++)
+        {
+            int a = 0;
+            cin>>a;
+            v.push_back(a);
+        }
+        cout<<checkWrongs(v)<<endl;
+        v.clear();
+    }
+    
 
 
     return 0;
