@@ -10,6 +10,7 @@ int main(int argc, char const *argv[])
     int i = 0;
     while (i < v.size())
     {
+        int distance = 0;
         int j = i;
         do{
 
