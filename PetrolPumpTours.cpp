@@ -13,12 +13,9 @@ int getThePump(vector<vector<int>> v)
         do{
             
 
-            
+            j = ((j+1) % (v.size()-1));
         }while (j != i);
-        if (foundThePump)
-        {
-            return i;
-        }
+        
         i++;
     }
     return -1;
