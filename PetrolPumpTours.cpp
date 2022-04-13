@@ -7,6 +7,7 @@ int getThePump(vector<vector<int>> v)
     int i = 0;
     while (i < v.size())
     {
+        bool foundThePump = true;
         int distance = 0;
         int j = i;
         do{
@@ -15,7 +16,14 @@ int getThePump(vector<vector<int>> v)
             {
                 distance += nextDistance;
             }
+            else
+            {
+                foundThePump = false;
+                break;
+            }
+            j = (j + 1) % (v.size()-1);
         }while (j != i);
+        
     }
 }
 
