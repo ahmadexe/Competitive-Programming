@@ -29,7 +29,7 @@ int getThePump(vector<vector<int>> v)
 int main(int argc, char const *argv[])
 {
 
-    vector<vector<int>> v = {{6,4}, {3,6}, {7,3}};
+    vector<vector<int>> v = {{4,6},{6,5},{7,3},{4,5}};
     cout<<getThePump(v);   
     
     
