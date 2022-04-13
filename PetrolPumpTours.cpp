@@ -1,5 +1,5 @@
-#include<iostream>
-#include<bits/stdc++.h>
+#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int getThePump(vector<vector<int>> v)
@@ -9,18 +9,19 @@ int getThePump(vector<vector<int>> v)
     {
         int distance = 0;
         int j = i;
-        do{       
+        do
+        {
             distance += v[j][0] - v[j][1];
             if (distance < 0)
             {
                 break;
             }
-            j = ((j+1) % (v.size()-1));
-        }while (j != i - 1);
+            j = ((j + 1) % (v.size() - 1));
+        } while (j != i - 1);
         if (distance >= 0)
         {
             return i;
-        }        
+        }
         i++;
     }
     return -1;
@@ -29,7 +30,7 @@ int getThePump(vector<vector<int>> v)
 int main(int argc, char const *argv[])
 {
 
-    vector<vector<int>> v = {{4,6},{6,5},{7,3},{4,5}};
-    cout<<getThePump(v);   
+    vector<vector<int>> v = {{4, 6}, {6, 5}, {7, 3}, {4, 5}};
+    cout << getThePump(v);
     return 0;
 }
