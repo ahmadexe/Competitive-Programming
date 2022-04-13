@@ -16,7 +16,7 @@ int getThePump(vector<vector<int>> v)
                 break;
             }
             j = ((j+1) % (v.size()-1));
-        }while (j != i);
+        }while (j != i - 1);
         if (distance >= 0)
         {
             return i;
@@ -29,7 +29,7 @@ int getThePump(vector<vector<int>> v)
 int main(int argc, char const *argv[])
 {
 
-    vector<vector<int>> v = {{4,6},{6,5},{7,3},{4,5}};
+    vector<vector<int>> v = {{6,4}, {3,6}, {7,3}};
     cout<<getThePump(v);   
     
     
