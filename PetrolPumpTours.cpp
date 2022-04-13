@@ -10,7 +10,11 @@ int getThePump(vector<vector<int>> v)
         int distance = 0;
         int j = i;
         do{
-            
+            int nextDistance = v[j][0] - v[j][1];
+            if (nextDistance >= 0)
+            {
+                distance += nextDistance;
+            }
         }while (j != i);
     }
 }
