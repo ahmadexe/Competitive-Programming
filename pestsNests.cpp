@@ -92,9 +92,9 @@ int main(int argc, char const *argv[])
 
     vector<vector<int>> arr = 
     {
-        {0,1,1,1},
-        {1,1,0,1},
         {1,1,1,1},
+        {1,1,1,1},
+        {1,1,0,1},
         {1,1,1,1}
     };
 
