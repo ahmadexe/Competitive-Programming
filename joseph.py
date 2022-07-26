@@ -7,6 +7,5 @@ l = list(range(1,x))
 b = 0
 while (len(l) != 1):
     l.pop(k)
-    k = (k+a)%len(l)
-    
+    k = (k+a)%len(l)    
 print(l[0])

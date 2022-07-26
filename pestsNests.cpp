@@ -83,7 +83,7 @@ pair<int, int> run(vector<vector<int>> arr)
 
         }
     }
-    pair<int, pair<int,int>> p = *s.rbegin();
+    pair<int, pair<int,int>> p = *s.begin();
     return p.second;
 }
 
@@ -93,8 +93,8 @@ int main(int argc, char const *argv[])
     vector<vector<int>> arr = 
     {
         {1,1,1,1},
-        {1,1,1,1},
-        {1,1,0,1},
+        {0,1,1,1},
+        {0,1,1,1},
         {1,1,1,1}
     };
 
