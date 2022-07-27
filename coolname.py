@@ -1,4 +1,3 @@
-
 def solve(string):
     power = 0
     sorted_string = "".join(sorted(string))
