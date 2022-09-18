@@ -7,6 +7,7 @@ void print(char set[], string prefix ,int n, int k) {
         cout << prefix << endl;
         return;
     }
+ 
     for (int i = 0; i < n; i++) {
         string newprefix;
         newprefix = prefix + set[i];
