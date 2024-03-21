@@ -1,20 +1,18 @@
 class Solution {
 public:
-    int numberOfSteps(int num) {
-        int step = 0;
-        while (num!=0)
+    int recursion(int num, int steps) {
+        if (num == 0) 
         {
-            if(num%2 == 0)
-            {
-                num = num/2;
-                step++;
-            }
-            else
-            {
-                num = num - 1;
-                step++;
-            }
+            return steps;
         }
-        return step;
+        if (num%2 == 0)
+        {
+            return recursion(num/2, steps+1);
+        }
+        return recursion(num-1, steps+1);
+    }
+
+    int numberOfSteps(int num) {
+        return recursion(num, 0);
     }
 };
